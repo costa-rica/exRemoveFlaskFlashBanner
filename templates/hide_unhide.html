@@ -1,0 +1,26 @@
+<head>
+    <title>Hide/Unhide</title>
+</head>
+
+<body>
+    <h1>Example Hide and Unhide</h1>
+    <div id="email_div">
+        <label>Email:</label>
+        <input type="text" id="email" name="email_text">
+        <input type="submit" id="btn_subtmit" value="submit">
+        <br><br>
+    </div>
+    <input type="submit" id="btn_hider" value="toggle submit" onclick="hideUnhide()">
+
+    <script>
+        function hideUnhide() {
+            var my_element = document.getElementById("email_div");
+            if (my_element.style.display === "none") {
+                my_element.style.display = "inline";
+            } else {
+                my_element.style.display = "none";
+            }
+        } 
+    </script>
+</body>
+</html>
